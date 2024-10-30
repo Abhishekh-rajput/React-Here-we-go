@@ -14,7 +14,8 @@ React element is an object here which converts itself into html which is underst
 To create two children at the same level we have yo pass both as an array to the third argumnet of React.createElement
 to create a similar structure we have pass second child into a array as a third argument to parent
 */
-
+import React from "react";
+import ReactDOM from 'react-dom/client';
 const parent=React.createElement('div',{id:"parent"},[
 React.createElement('div', {id:"child"},[
         React.createElement('h1',{},'Im an h1 tag'),
